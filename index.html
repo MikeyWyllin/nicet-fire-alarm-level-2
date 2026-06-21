@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NICET Fire Alarm Level II - Practice Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>NICET Fire Alarm Level II</h1>
+      <p>25 random questions. 30 minute timer. 300-question master bank.</p>
+    </div>
+    <button id="resetStatsBtn" class="ghost">Reset Stats</button>
+  </header>
+
+  <main>
+    <section id="startScreen" class="card hero">
+      <h2>Practice Test</h2>
+      <p>This is original NICET-style practice. It is not an official NICET exam and does not copy NICET exam questions.</p>
+      <div class="grid stats-grid" id="statsGrid"></div>
+      <button id="startBtn" class="primary">Start 25 Question Test</button>
+      <button id="reviewWrongBtn" class="secondary">Review Missed Questions</button>
+    </section>
+
+    <section id="quizScreen" class="hidden">
+      <div class="quizbar card">
+        <div><strong id="progressText">Question 1 of 25</strong><span id="bankInfo"></span></div>
+        <div id="timer">30:00</div>
+      </div>
+      <div id="questionCard" class="card"></div>
+      <div class="navrow">
+        <button id="prevBtn" class="secondary">Back</button>
+        <button id="nextBtn" class="secondary">Next</button>
+        <button id="submitBtn" class="primary">Submit Test</button>
+      </div>
+    </section>
+
+    <section id="resultsScreen" class="hidden card">
+      <h2 id="scoreTitle">Score</h2>
+      <p id="scoreSummary"></p>
+      <div class="grid stats-grid" id="resultsStats"></div>
+      <button id="newTestBtn" class="primary">Generate New 25</button>
+      <button id="backHomeBtn" class="secondary">Home</button>
+      <h3>Review</h3>
+      <div id="reviewList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for personal study. Use current NICET reference editions during real prep.</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
