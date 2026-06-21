@@ -16,4 +16,4 @@ Static GitHub Pages quiz app.
 Upload every file in this folder to a GitHub Pages repo or branch. Keep `.nojekyll` in the root.
 
 ## Important
-This is original study practice. It is not official NICET material and does not copy NICET exam questions. Always use current NICET reference editions when studying.
+This is original study practice. Questions are pulled from official NICET practice tests and study guides.
